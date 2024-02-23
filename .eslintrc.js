@@ -1,5 +1,5 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   env: {
     browser: true,
     commonjs: true,
@@ -28,5 +28,16 @@ module.exports = {
   rules: {
     'react/prop-types': ['off'],
     'react/no-unescaped-entities': ['error', { forbid: ['>', '}'] }],
+    'no-console': ['warn', { allow: ['info', 'error', 'dir'] }],
+    'no-else-return': 'error',
+    'no-unneeded-ternary': 'error',
+    'no-useless-return': 'error',
+    'no-var': 'error',
+    'one-var': ['error', 'never'],
+    'prefer-arrow-callback': 'error',
+    'prefer-const': 'error',
+    strict: 'error',
+    'symbol-description': 'error',
+    yoda: ['error', 'never', { exceptRange: true }],
   },
 };
